@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.inner{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+}
+.outer2 .inner{
+    width:300px;
+    margin: auto;
+    margin-top: 110px;
+    height: 150px;
+
+}
+.outer1{
+    display: flex;
+    justify-content: space-between;
+}
+.outer3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
