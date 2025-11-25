@@ -1,0 +1,71 @@
+*{
+            margin: 0px;
+        }
+        .jsp,.py{
+            background-color: white;
+            width: 111px;
+            height:45px;
+            border: 1px solid black;
+        }
+
+        .jsp{
+            top: 0px;
+            text-align: center;
+            right: 0px;
+            position:absolute;
+            border-radius: 0px 8px 0px 30px;
+        }
+        .py{
+            text-align: center;
+            font-size: 15px;
+            border-radius: 8px 0px 30px 0px;
+            
+
+        }
+        .py h4{
+            margin:0px 0px 0px 12px;
+            padding-left: 4px;   
+
+        }
+
+        .container{
+            border: 1px solid rgb(8, 8, 8);
+            height: 500px;
+            width: 500px;
+            margin: 50px auto;
+            border-radius: 10px;
+            position: relative;
+            background: #510b0b;
+        }
+
+        .container:hover{
+            box-shadow: 0px 0px 20px black;
+        }
+        .image{
+            height: 200px ;
+            width: 200px;
+            top: 120px;
+            left:280px;
+            border-radius: 50%;
+            position:absolute;
+            border: 8px solid rgb(253, 252, 252);
+        }
+
+        .abc{
+            font-size: 9px;
+            font-weight: bold; 
+        }
+        span{
+            color: orange;
+        }
+        .Text{
+            color: white;
+            font-family: cursive;
+            padding: 50px;
+        }
+        .Text h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .Text h3{
+            font-size: 40px;
+        }
