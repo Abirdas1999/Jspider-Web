@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>course fees</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- coustom css -->
+     <link rel="stylesheet" href="Style.css" />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .outer-div {
+        height: 30rem;
+        width: 25rem;
+        border: 2px solid black;
+        margin: 0px auto;
+      }
+      .outer-div h2 {
+        text-align: center;
+        text-decoration: underline;
+      }
+     
+    </style>
+    
+  </head>
+  <body><div class="outer-div">
+      <h2>Fees Calculation</h2>
+      <div class="inner-div">
+          <label for="course">course</label>
+          <select id="course1" name="fruits" onchange="updateFees()">
+            <option  value="32000">java</option>
+            <option value="30000">Python</option>
+            <option value="26000">Testing</option></select
+          ><br />
+          <label for="fees">Total fees</label>
+          <input id="totalFees" type="number"  readonly/><br />
+           <!-- Caste -->
+          <label>Caste</label><br>
+          
+
+<input type="radio" id="obc" name="caste" value="0">
+<label for="obc">OBC</label>
+
+<input type="radio" id="sc" name="caste" value="10">
+<label for="sc">SC</label>
+
+<input type="radio" id="st" name="caste" value="15">
+<label for="st">ST</label><br>
+
+
+          <label for="dis-fess">Conc fees</label>
+          <input type="number" id="discountAmount"><br>
+          <label for="paidfess">Paid fees</label>
+          <input type="number" id="paidFees"><br>
+          <label for="due fess">Due fees</label>
+          <input type="number" name="" id="dueFees"><br>
+          <button onclick="calFees()">Calculate fees</button>
+        
+        </form>
+      </div>
+      
+
+    </body>
+
+</html>

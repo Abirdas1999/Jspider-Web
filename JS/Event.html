@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event Handling</title>
+	</head>
+	<style>
+		h1 {
+			font-size: 3rem;
+			/* display: ; */
+		}
+		button {
+			padding: 5px;
+			border-radius: 5px;
+			border: none;
+			margin-left: 10px;
+			width: 100px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<h1 id="head">Event Handling</h1>
+			<div class="btn">
+				<button id="btn1">Blue</button>
+				<button id="btn2">Red</button>
+				<button id="btn3">Pink</button>
+				<button id="btn4">Yellow</button>
+				<button id="btn5">Black</button>
+				<button id="btn6">Orange</button>
+			</div>
+		</div>
+		<script>
+			
+			// using eventlistner
+			document.getElementById("btn1").addEventListener("click", onchangeColor());
+			document.getElementById("btn2").addEventListener("click", onchangeColor2);
+			document.getElementById("btn3").addEventListener("click", onchangeColor3);
+			document.getElementById("btn4").addEventListener("click", onchangeColor4);
+			document.getElementById("btn5").addEventListener("click", onchangeColor5);
+			document.getElementById("btn6").addEventListener("click", onchangeColor6);
+			let head = document.getElementById("head");
+
+			function onchangeColor(myColor) {
+				head.style.color = myColor;
+			}
+			// function onchangeColor2() {
+			// 	head.style.color = "red";
+			// }
+			// function onchangeColor3() {
+			// 	head.style.color = "pink";
+			// }
+			// function onchangeColor4() {
+			// 	head.style.color = "yellow";
+			// }
+			// function onchangeColor5() {
+			// 	head.style.color = "black";
+			// }
+			// function onchangeColor6() {
+			// 	head.style.color = "orange";
+			// }
+		</script>
+	</body>
+</html>

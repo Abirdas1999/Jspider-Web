@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+            fieldset{
+                border: 5px solid yellow;
+                margin: 50px;
+            }
+			.container h1 {
+				font-size: 4rem;
+				text-align: center;
+				text-decoration: underline;
+                margin: 30px 0;
+			}
+            .container{
+                background-image: url(./Photo-1.jpg);
+                color: white;
+                height: 100vh;
+                background-size: cover;
+            }
+            input,textarea,select{
+                padding: 6px;
+                border-radius: 5px;
+                border: none;
+                
+            }
+            legend{
+                font-size: 1rem;
+                font-weight: 520;
+                background:linear-gradient(to left,rgb(184, 9, 9),blue);
+                padding: 15px;
+                border-radius: 0px 15px 0px 15px;
+                margin-left: 10px;
+            }
+            button{
+                padding: 5px 10px;
+                font-size: 1rem;
+                background:rgb(105, 105, 6);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Student Form</h1>
+			<form>
+				<fieldset>
+                    <table width="100%" cellspacing="20px">
+                        <legend>Student-Form</legend>
+						<tr>
+							<td> <label>Student Name</label></td>
+							<td><input type="text" name="" placeholder="Enter your name"/></td>
+							<td><label>Father's Name</label></td>
+							<td><input type="text" name="" placeholder="Father's name"/></td>
+							<td><label >Mother's Name</label></td>
+							<td><input type="text" name="" placeholder="Mother's name"/></td>
+						</tr>
+                        <tr>
+							<td><label>DOB</label></td>
+							<td><input type="date" name=""/></td>
+							
+						</tr>
+                        <tr>
+							<td><label>Gender</label></td>
+							<td>
+                                <input type="radio" name="radio"/>Male
+                                <input type="radio" name="radio"/>Female
+                                <input type="radio" name="radio"/>Others
+                            </td>
+						</tr>
+                        <tr>
+							<td><label>Email</label></td>
+							<td><input type="email" name="" placeholder="Enter your email"/></td>
+							<td><label>Phone</label></td>
+							<td><input type="number" name="" placeholder="Enter your phone"/></td>
+						</tr>
+                        <tr>
+							<td><label>Languages</label></td>
+							<td style="display: flex; gap: 10px;">
+                                <input type="checkbox"/>Hindi <br>
+                                <input type="checkbox"/>Bengali <br>
+                                <input type="checkbox"/>English <br>
+                                <input type="checkbox"/>Others <br>
+                            </td>
+						</tr>
+                        <tr>
+                            <td><label>Address</label></td>
+                            <td><textarea name="" id="" rows="3" cols="20"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">State</label></td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">Select</option>
+                                    <option value="">Bihar</option>
+                                    <option value="">West Bengal</option>
+                                    <option value="">Odisha</option>
+                                    <option value="">Kashmir</option>
+                                    <option value="">Goa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Resume</label></td>
+                            <td><input type="file" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6"><button>Submit</button></td>
+                        </tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

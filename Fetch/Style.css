@@ -1,0 +1,18 @@
+
+.coustomHeading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgba(59, 34, 83, 0.278);
+}
+.coustomHeading-product{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(41, 34, 83, 0.518);
+
+
+}
+
+.product-img{
+    height: 300px;
+    object-fit: contain;
+}

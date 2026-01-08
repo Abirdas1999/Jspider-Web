@@ -1,0 +1,59 @@
+body {
+    background-color: #d1e2f9;
+}
+
+/* site heading */
+.coustomHeading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgba(174, 116, 231, 0.558);
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgba(174, 116, 231, 0.558);
+    border: none;
+    border-radius: 20px;
+
+}
+
+.submit-btn:hover {
+
+    background-color: rgba(138, 24, 253, 0.515);
+
+}
+
+.submit-btn:focus,
+.submit-btn:active,
+.submit-btn:active:focus {
+    background-color: rgba(174, 116, 231, 0.75) !important;
+}
+
+.main-Card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-control::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 0.8rem;
+    /* text-align: center; */
+}
+
+input.form-control , .prevInput {
+    border-radius: 10px;
+    background-color: #ddd7f73c;
+    border: none;
+    color: rgba(50, 36, 64, 0.558)!important;
+}
+
+input.form-control:focus {
+    background-color: #ddd7f79c;
+    box-shadow: none;
+    border: none;
+}

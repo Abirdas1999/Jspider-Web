@@ -1,0 +1,58 @@
+body {
+	background-color: #d1e2f9;
+}
+
+/* navbar */
+.coustomNav {
+    background-color: #938ccd65;
+    
+}
+
+
+/* site heading */
+.coustomHeading {
+	font-size: 2rem;
+	font-weight: 600;
+	color: rgb(253, 250, 245);
+}
+
+/* card */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+
+}
+
+/* product heading */
+.bodyCoustom .coustomHeading{
+    color: #5a529e60;
+	font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+.bodyCoustom .coustomHeading:hover{
+    color: #322c6660;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* card image */
+.coustomImg{
+    height: 250px;
+    object-fit: contain;
+}
+
+
+/* card content */
+.items .card h1:hover,
+.items .card h4:hover {
+    color: #1b297299;
+    transition:0.3s ease-in-out;
+}
+

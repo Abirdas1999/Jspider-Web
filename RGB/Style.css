@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Heading{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 4rem;
+    color:rgba(212, 189, 235, 0.33)
+}
+.frame{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.container button{
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    margin: 10px ;
+    cursor: pointer;
+    background-color: rgba(212, 189, 235, 0.33);
+    border: none;
+    border-radius: 20px;
+}
