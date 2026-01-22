@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stop-Watch</title>
+		<!-- bootsrap cunnect -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="Style.css" />
+	</head>
+	<body>
+        <div class="container">
+            <h1 class="text-center coustomHeading pt-5" style="font-size: 5rem;">Stop-Watch</h1>
+            <div class="row">
+                <div class="col-4 m-auto py-5 my-5">
+                    <div class="card main-Card text-center" style="width: 28rem">
+                        <div class="card-body">
+                            <h2 id="display" class="mb-4"><span id="min">00</span> : <span id="sec">00</span> : <span id="ms">00</span></h2>
+                            <div class="d-flex allBtn justify-content-center gap-3">
+                                <button class="btn btn-success" id="startBtn">Start</button>
+                                <button class="btn btn-danger" id="stopBtn">Stop</button>
+                                <button class="btn btn-warning" id="resetBtn">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="Index.js"></script>
+</html>
