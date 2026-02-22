@@ -1,28 +1,26 @@
-import { useState } from 'react';
-import Navbar from './Components/Navbar';
-import ToDoApp from './Components/ToDoApp';
-import Login from './Components/Login';
-import ThemeContext from './Utility/ThemeContext';
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Navbar from "./pages/Navbar";
+import Product from "./pages/Product";
+import Service from "./pages/Service";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [value, setValue] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-  function toggleTheme() {
-    setIsDark(!isDark);
-  }
-
   return (
-    <div className={isDark ? "min-h-screen bg-gray-900" : "min-h-screen bg-amber-50"}>
-      <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-
-        <Navbar value={value} setValue={setValue} />
-
-        {value ? <ToDoApp isDark={isDark} /> : <Login isDark={isDark} />}
-
-      </ThemeContext.Provider>
-
-    </div>
-  )
+    <BrowserRouter>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/service" element={<Service />}>
+          <Route path="profile" element={<Profile/>}/>
+          <Route path="settings" element={<Settings/>}/>
+        </Route>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
