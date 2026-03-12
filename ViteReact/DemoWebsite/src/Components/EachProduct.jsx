@@ -1,9 +1,24 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-function EachProduct({ product }) {
+function EachProduct({ product, updateCart, decreaseQty, isCart }) {
+    const navigate = useNavigate()
+
+    const increment = () => {
+        updateCart(product);
+    };
+
+    const decrement = () => {
+        if (isCart) {
+            decreaseQty(product.id);
+        } else {
+            updateCart(product); // Add to cart from product page
+        }
+    };
+
     return (
         <>
-            <div className="col-3" key={product.id}>
+            <div className="col-3" key={product.id} style={{ cursor: "pointer" }} onClick={() => navigate(`details/${product.id}`)}>
                 <div className="card h-100 shadow-lg border-0">
 
                     <img
@@ -23,13 +38,49 @@ function EachProduct({ product }) {
                         </p>
 
                         <div className="mt-auto">
-                            <h6 className="text-warning fw-bold">
-                                ₹ {product.price}
-                            </h6>
+                            <h3 className="text-warning fw-bold">
+                                ₹ {product.price}/-
+                            </h3>
 
-                            <button className="btn btn-warning w-100 mt-2">
-                                Add to Cart
-                            </button>
+                            {/* 🔹 Cart Buttons */}
+                            {isCart && (
+                                <div className="d-flex justify-content-center gap-5 align-items-center mt-2 px-2 py-1">
+
+                                    <button
+                                        className="btn btn-sm"
+                                        style={{ fontSize: "2.5rem", color: "red" }}
+                                        onClick={decrement}
+                                    >
+                                        -
+                                    </button>
+
+                                    <span className="fw-bold fs-5">
+                                        {product.qty}
+                                    </span>
+
+                                    <button
+                                        className="btn btn-sm"
+                                        style={{ fontSize: "2rem", color: "green" }}
+                                        onClick={increment}
+                                    >
+                                        +
+                                    </button>
+
+                                </div>
+                            )}
+
+                            {/* 🔹 Product Page Button */}
+                            {!isCart && (
+                                <div className="container text-center bg-warning">
+                                    <button
+                                        className="btn btn-sm"
+                                        onClick={() => updateCart(product)}
+                                    >
+                                        Add to cart
+                                    </button>
+                                </div>
+                            )}
+
                         </div>
                     </div>
 

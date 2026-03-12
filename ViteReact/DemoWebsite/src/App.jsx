@@ -1,26 +1,24 @@
-import Navbar from './Components/Navbar'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
-import Services from './Pages/Services'
-import Contact from './Pages/Contact'
-import Setting from './Components/Setting'
-import Products from './Components/Products'
+// import Navbar from './Components/Navbar'
+// import Footer from './Components/Footer'
+// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import Home from './Pages/Home'
+// import Services from './Pages/Services'
+// import Contact from './Pages/Contact'
+// import Setting from './Components/Cart'
+// import Products from './Components/Products'
+// import Cart from './Components/Cart'
+// import ProductDetails from './Components/ProductDetails'
+// import LyfCycle, { Parent } from './Components/Parent'
+
+import UseCallback from "./Components/UseCallback"
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="home" element={<Home/>} />
-          <Route path="services" element={<Services/>} >
-            <Route path="products" element={<Products/>} />
-            <Route path="setting" element={<Setting/>} />
-          </Route>
-          <Route path="contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <h1>App</h1>
+      {/* <Parent/> */}
+      <UseCallback/>
+      
 
     </>
   )

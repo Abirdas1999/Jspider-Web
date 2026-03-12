@@ -6,6 +6,7 @@ const DemoData = [
 		description:
 			"Lightweight running shoes with responsive cushioning for daily training.",
 		price: 5999,
+		qty:0
 	},
 	{
 		id: 2,
@@ -14,6 +15,7 @@ const DemoData = [
 		description:
 			"Premium comfort and energy return designed for long-distance runners.",
 		price: 8999,
+		qty:0
 	},
 	{
 		id: 3,
@@ -21,6 +23,7 @@ const DemoData = [
 		title: "Puma RS-X Sneakers",
 		description: "Bold street-style sneakers with superior comfort and grip.",
 		price: 4999,
+		qty:0
 	},
 	{
 		id: 5,
@@ -29,6 +32,7 @@ const DemoData = [
 		description:
 			"High-performance training shoes built for gym and crossfit workouts.",
 		price: 6499,
+		qty:0
 	},
 	{
 		id: 7,
@@ -36,6 +40,7 @@ const DemoData = [
 		title: "Nike Revolution 6",
 		description: "Breathable and lightweight shoes perfect for beginners.",
 		price: 3999,
+		qty:0
 	},
 
 	{
@@ -44,6 +49,7 @@ const DemoData = [
 		title: "Nike Air Force 1",
 		description: "Iconic street-style sneakers with premium leather finish.",
 		price: 7499,
+		qty:0
 	},
 
 	{
@@ -52,6 +58,7 @@ const DemoData = [
 		title: "Puma Ignite Flash",
 		description: "High-performance running shoes with flexible sole design.",
 		price: 5799,
+		qty:0
 	},
 
 	{
@@ -60,6 +67,7 @@ const DemoData = [
 		title: "New Balance Fresh Foam X",
 		description: "Ultra-soft cushioning and breathable upper mesh.",
 		price: 8699,
+		qty:0
 	},
 	{
 		id: 15,
@@ -67,6 +75,7 @@ const DemoData = [
 		title: "Nike React Infinity Run",
 		description: "Designed to reduce injury and provide smooth transitions.",
 		price: 11299,
+		qty:0
 	},
 	{
 		id: 18,
@@ -74,6 +83,7 @@ const DemoData = [
 		title: "ASICS GT-2000 12",
 		description: "Stability running shoes with enhanced midsole support.",
 		price: 9399,
+		qty:0
 	},
 
 	{
@@ -82,6 +92,7 @@ const DemoData = [
 		title: "Nike Downshifter 12",
 		description: "Lightweight training shoes built for everyday workouts.",
 		price: 4599,
+		qty:0
 	},
 
 
@@ -91,6 +102,7 @@ const DemoData = [
 		title: "Puma Future Rider",
 		description: "Retro inspired sneakers with vibrant street styling.",
 		price: 4899,
+		qty:0
 	},
 
 ];
